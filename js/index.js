@@ -27,7 +27,7 @@ $(function () {
                 initial: {
                     fill: '#FF8C00', 
                     stroke: '#fff', 
-                    r: 6
+                    r: 10
                 },
                 hover: {
                     fill: '#fd2020', 
