@@ -1,6 +1,6 @@
 $(function () {
     var initMap = function (data) {
-        var mapObject = $('#map').vectorMap({
+        $('#map').vectorMap({
             map: 'cn_merc_en',
             backgroundColor: '#253449',
             zoomMin: 0.9,
@@ -82,7 +82,6 @@ $(function () {
                 $('#info_bar').fadeOut("fast");
             }
         }, );
-
     }
 
     $('body').on('click', '.info_bar_photo', function () {
@@ -95,7 +94,6 @@ $(function () {
 
 });
 
-// 图片放大缩小
 function imgShow(outerdiv, innerdiv, bigimg, _this) {
     var src = _this.attr("src");
     $(bigimg).attr("src", src);
