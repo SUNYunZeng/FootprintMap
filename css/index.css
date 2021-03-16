@@ -43,6 +43,7 @@
 }
 
 #info_bar_title{
+    cursor: default;
     position: relative;
     height: 35px;
     width: 100%;
@@ -54,6 +55,7 @@
 }
 
 #info_bar_desc{
+    cursor: default;
     position: relative;
     padding: 8px;
     margin: 0;

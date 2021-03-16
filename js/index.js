@@ -67,6 +67,7 @@ $(function () {
                         for (let i = 0; i < photos.length; i++) {
                             var p_img = document.createElement("img");
                             p_img.setAttribute('class', 'info_bar_photo');
+                            p_img.setAttribute('title', '点击放大');
                             p_img.src = photos[i];
                             $('#info_bar_photos').append(p_img)
                         }
