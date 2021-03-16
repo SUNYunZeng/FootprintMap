@@ -2,11 +2,11 @@
 
 **足迹地图可以展示你过去到访过的地方，以及到访地点的介绍与图片记录**，同时不同地标的半径大小表示了访问该地点的频率高低，如下图所示：
 
-![我的足迹地图](http://wx1.sinaimg.cn/large/cf5b72a1ly1fvv1gupvz0j20xx0op760.jpg)
+![我的足迹地图](https://sunyunzeng.com/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E8%B6%B3%E8%BF%B9%E5%9C%B0%E5%9B%BE/%E5%9B%BE1.png)
 
 其中每个足迹图标都可以点击，点击会弹出左边的介绍栏及对应的介绍文字与图片。**图片点击可以放大显示**，如下图所示：
 
-<center>{% asset_img 图2.png %}</center>
+![图片放大查看](https://sunyunzeng.com/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E8%B6%B3%E8%BF%B9%E5%9C%B0%E5%9B%BE/%E5%9B%BE2.png)
 
 # 足迹地图使用方式
 
@@ -69,7 +69,7 @@ FootprintMap
 
 将足迹数据修改完毕后，将**项目传到你的 github 中进行托管，然后启用你的足迹地图项目的 github Page 服务，会得到服务地址： http://xxxx/xxxx/.**
 
-<center>{% asset_img 图3.png %}</center>
+![图片放大查看](https://sunyunzeng.com/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E8%B6%B3%E8%BF%B9%E5%9C%B0%E5%9B%BE/%E5%9B%BE3.png)
 
 **然后利用 iframe 将足迹地图内嵌到你博客中的相应位置，示例代码如下：**
 
@@ -87,7 +87,8 @@ FootprintMap
 
 足迹地图依赖的是 **JVectorMap**，关于基本的样式定义可以参考官网 https://jvectormap.com/documentation/javascript-api/jvm-map/。
 
-<center><img src='http://www.u396.com/wp-content/uploads/2014/09/jvectormap.jpg'> </img></center>
+
+![jvectormap](https://www.u396.com/wp-content/uploads/2014/09/jvectormap.jpg)
 
 # 续
 
