@@ -34,6 +34,14 @@
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+#info_bar_close_btn{
+    z-index: 201;
+    cursor: pointer;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
 #info_bar_title{
     position: relative;
     height: 35px;

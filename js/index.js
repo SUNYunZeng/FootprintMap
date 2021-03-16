@@ -1,10 +1,10 @@
 $(function () {
     var initMap = function (data) {
         var mapObject = $('#map').vectorMap({
-            map: 'cn_merc_en', 
+            map: 'cn_merc_en',
             backgroundColor: '#253449',
             zoomMin: 0.9,
-            zoomMax: 4.4, 
+            zoomMax: 4.4,
             focusOn: {
                 x: 0.55,
                 y: 2,
@@ -25,12 +25,12 @@ $(function () {
             },
             markerStyle: {
                 initial: {
-                    fill: '#FF8C00', 
-                    stroke: '#fff', 
-                    
+                    fill: '#FF8C00',
+                    stroke: '#fff',
+
                 },
                 hover: {
-                    fill: '#fd2020', 
+                    fill: '#fd2020',
                     stroke: '#fff',
                 },
             },
@@ -39,17 +39,16 @@ $(function () {
                 markers: [{
                     attribute: 'r',
                     scale: [4, 8],
-                    values: data.map(function(c,i,a){
-                        if(c.freq && Number.isInteger(c.freq)) {
-                            if(c.freq>10) return 10;
+                    values: data.map(function (c, i, a) {
+                        if (c.freq && Number.isInteger(c.freq)) {
+                            if (c.freq > 10) return 10;
                             else if (c.freq < 1) return 1;
                             else return c.freq;
-                        }else{
+                        } else {
                             return 1;
                         }
                     })
-                  }
-                ]
+                }]
             },
             onMarkerClick(e, code) {
                 clickItem = data[code];
@@ -74,6 +73,9 @@ $(function () {
                     } else {
                         $('#info_bar_photos').empty()
                     }
+                    $('#info_bar_close_btn').click(function(){
+                        $('#info_bar').fadeOut('fast');
+                    });
                 }
             },
             onRegionClick() {
@@ -86,11 +88,7 @@ $(function () {
     $('body').on('click', '.info_bar_photo', function () {
         var _this = $(this);
         imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);
-    })
-    $(".info_bar_photo").click(function () {
-        var _this = $(this); 
-        imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);
-    });
+    })  
     $.getJSON('/data/config.json', function (data) {
         initMap(data)
     })
@@ -100,7 +98,6 @@ $(function () {
 // 图片放大缩小
 function imgShow(outerdiv, innerdiv, bigimg, _this) {
     var src = _this.attr("src");
-    console.log('??')
     $(bigimg).attr("src", src);
     $("<img/>").attr("src", src).load(function () {
         var windowW = $(window).width();
