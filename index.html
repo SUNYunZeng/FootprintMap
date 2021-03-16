@@ -1,48 +1,39 @@
+<html>
 <!--
 足迹地图
 -->
 
-<html>
-
 <head>
 	<meta charset="UTF-8">
-	<!--引入jQuery框架-->
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-	<!--引入jVectorMap库-->
-	<script type="text/javascript" src="js/jquery-jvectormap-1.2.2.min.js"></script>
-	<!--引入样式表-->
-	<link href="js/jquery-jvectormap-1.2.2.css" rel="stylesheet" media="screen">
-
-	<!--引入中国地图数据库-->
-	<script type="text/javascript" src="js/jquery-jvectormap-cn-merc-en.js"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="/js/index.js"></script>
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="referrer" content="never">
+	<title>足迹地图</title>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-jvectormap-2.0.5.min.js"></script>
+	<script type="text/javascript" src="js/jquery-jvectormap-cn-merc-en.js"></script>
+	<script type="text/javascript" src="/js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link href="css/jquery-jvectormap-2.0.5.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 
 <body>
-	<!--background-color: 地图背景颜色-->
-	<div id="map" style="background-color:#353535">
+	<div id="map">
 		<div id="info_bar">
-			<div id='info_bar_paper'>
+			<div id="info_bar_paper">
 				<div id="info_bar_title">
 				</div>
 				<div id="info_bar_desc">
 				</div>
 				<div id="info_bar_photos">
-					<img class="info_bar_photo"
-						src='http://m.qpic.cn/psc?/V115oyNl11FAq7/ETWql2gUF22pNmiMBc.OARYef.ZynHj7VLc8N**aHzaQkp4U5oJI4Saa3W68M7O8ynmpV.j*l1JOYoOcYI*WO7r7NotbsyncY3NuLst7vwM!/b&bo=ngL2AQAAAAAFF18!&rf=viewer_4' />
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="outerdiv"
-		style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
-		<div id="innerdiv" style="position:absolute;">
-			<img id="bigimg" style="border:5px solid #fff;" src="" />
+	<div id="outerdiv">
+		<div id="innerdiv">
+			<img id="bigimg" />
 		</div>
 	</div>
-	
+</body>
 
 </html>

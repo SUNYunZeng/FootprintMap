@@ -27,7 +27,7 @@ $(function () {
                 initial: {
                     fill: '#FF8C00', 
                     stroke: '#fff', 
-                    r: 10
+                    
                 },
                 hover: {
                     fill: '#fd2020', 
@@ -35,6 +35,22 @@ $(function () {
                 },
             },
             markers: [...data],
+            series: {
+                markers: [{
+                    attribute: 'r',
+                    scale: [4, 8],
+                    values: data.map(function(c,i,a){
+                        if(c.freq && Number.isInteger(c.freq)) {
+                            if(c.freq>10) return 10;
+                            else if (c.freq < 1) return 1;
+                            else return c.freq;
+                        }else{
+                            return 1;
+                        }
+                    })
+                  }
+                ]
+            },
             onMarkerClick(e, code) {
                 clickItem = data[code];
                 if (clickItem) {

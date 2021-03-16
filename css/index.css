@@ -4,6 +4,7 @@
     height: 100%;
     top: 0;
     left: 0;
+    background-color:#353535
 }
 
 #info_bar{
@@ -72,6 +73,25 @@
     height: 150px;
     width: 150px;
     object-fit: scale-down;
+}
+
+#outerdiv{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.7);
+    z-index:200;
+    width:100%;
+    height:100%;
+    display:none;
+}
+
+#innerdiv{
+    position:absolute;
+}
+
+#bigimg{
+    border:5px solid #fff;
 }
 
 ::-webkit-scrollbar{
