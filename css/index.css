@@ -74,6 +74,7 @@
 }
 
 .info_bar_photo{
+    cursor: pointer;
     position: relative;
     min-width: 50px;
     min-height: 50px;
