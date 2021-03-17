@@ -52,19 +52,25 @@
     text-align: center;
     font-size: x-large;
     border-bottom: solid silver 2px;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    font-weight: 550;
 }
 
 #info_bar_desc{
     cursor: default;
     position: relative;
     padding: 8px;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 0;
     width: calc(100% - 16px);
     bottom: 0;
     white-space: pre-line;
     overflow:auto;
+    font-family:courier;
+    background: linear-gradient(to right, green, blue);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #info_bar_photos{
