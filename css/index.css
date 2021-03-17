@@ -11,7 +11,7 @@
     margin-top: 55px;
     height: calc(100% - 55px);
     width: 25%; 
-    min-width: 330px; 
+    min-width: 280px; 
     position: absolute; 
     left: 0; 
     bottom: 0; 
@@ -52,16 +52,17 @@
     text-align: center;
     font-size: x-large;
     border-bottom: solid silver 2px;
+    font-size: 1.5em;
 }
 
 #info_bar_desc{
     cursor: default;
     position: relative;
     padding: 8px;
+    font-size: 1em;
     margin: 0;
     width: calc(100% - 16px);
     bottom: 0;
-    font-size: medium;
     white-space: pre-line;
     overflow:auto;
 }
@@ -78,11 +79,11 @@
 .info_bar_photo{
     cursor: pointer;
     position: relative;
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 120px;
+    min-height: 120px;
     margin: 5px;
-    height: 150px;
-    width: 150px;
+    height: 45%;
+    width: 45%;
     object-fit: scale-down;
 }
 
